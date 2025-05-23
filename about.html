@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .projects-hero {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .about-section {
+            padding: 100px 0;
+        }        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .section-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .image-separator {            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .list-styled {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .list-styled li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .list-styled li i {
+            margin-right: 15px;
+            color: #2c3e50;
+        }        /* Navigation Tabs */
+        .project-navigation {
+            padding: 50px 0;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 40px;
+        }        .project-nav .nav-link {
+            border: none;
+            color: #666;
+            padding: 15px 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .project-nav .nav-link.active {
+            background: none;
+            color: #333;
+        }
+
+        .project-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff4d00;
+        }
+
+        .project-nav .nav-link:hover {
+            color: #333;
+            background: none;
+        }
+        
+        /* Custom styles for section headings */
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #ff4d00;
+        }
+
+        /* Custom styles for commitments section */
+        .commitment-icon {
+            color: #ff4d00;
+            margin-bottom: 1rem;
+        }
+        
+        .commitment-card {
+            padding: 1.5rem;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .commitment-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Groco-PTY LTD Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+        <li class="nav-item">
+         <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+         </li>
+      <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+         </li>
+            <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+            </ul>
+            </div>
+         </form>
+      </div>
+   </div> 
+</nav>
+    
+      
+ 	   	</header>    <div class="projects-hero">
+        <div class="container">
+            <h1 class="hero-title">About</h1>
+            <p class="hero-subtitle text-secondary">Building Trust Through Excellence and Innovation</p>
+        </div>
+    </div>
+
+    <!-- Section Navigation -->    <div class="project-navigation">
+        <div class="container">            <ul class="nav nav-pills project-nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#history">OUR HISTORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#approach">OUR APPROACH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#commitments">OUR COMMITMENTS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>        <section id="history" class="about-section">
+            <div class="container">                <div class="about-content">                   
+                   <p class="section-text" style="color: black;"><strong>Since our establishmentin Maun, Botswana, Groco-PTY LTD has evolved from a small construction company into a comprehensive building solutions provider. Our journey began with a simple vision: to deliver quality construction services while contributing to the development of our local community.</strong></p>
+                    <p class="section-text">Today, we stand proud as one of Maun's most trusted construction companies, offering diverse services from brick moulding to complete turnkey projects. Our growth has been marked by successful projects in Disaneng, Matshwane, and Motshegaletau, where we've built everything from bachelor units to family homes.</p>
+                    <p class="section-text">Built on the principles of quality, reliability, and innovation, Groco-PTY LTD continues to shape the landscape of Maun and surrounding areas. Our team of skilled professionals combines traditional building techniques with modern construction methods to deliver exceptional results that stand the test of time.</p>
+                </div>
+            </div>
+        </section>        <div class="image-separator" style="background-image: url('banner11.jpg');"></div>        <section id="approach" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-heading">OUR APPROACH</h2>                    <p class="section-text" style="color: black;"><strong>From modest brick moulding projects to complete turnkey developments, we embrace every construction challenge with equal dedication. Our success is built on three fundamental pillars – technical expertise, transparent communication, and unwavering commitment to quality. These principles guide every project we undertake in Maun and beyond.</strong></p>
+                    <p class="section-text">Throughout our journey, we've maintained an open dialogue with our clients, ensuring their vision aligns with practical construction possibilities. Our experienced team provides thoughtful insights and creative solutions to enhance every project.</p>
+                    <p class="section-text">When it comes to project costs, we believe in complete transparency. Our detailed quotations cover all aspects of construction, from materials to labor, ensuring you have a clear understanding of your investment from day one. This approach has earned us the trust of countless clients across Botswana.</p>
+                </div>
+            </div>
+        </section><div class="image-separator" style="background-image: url('banner6.jpg');"></div>
+        
+        <section id="commitments" class="about-section">
+            <div class="container">
+                <h2 class="section-heading">OUR COMMITMENTS</h2>
+                <p class="text-center mb-5">At Groco-PTY LTD, our commitments shape every brick we lay and every project we deliver, ensuring excellence in construction across Maun and beyond.</p>
+                <div class="row">
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="commitment-card">
+                            <i class="fas fa-hard-hat fa-3x mb-3 commitment-icon"></i>
+                            <h3 class="h4">Worksite Safety</h3>
+                            <p>We prioritize the safety of our workers and clients at every construction site. Our strict safety protocols and regular training ensure incident-free project delivery.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="commitment-card">
+                            <i class="fas fa-crown fa-3x mb-3 commitment-icon"></i>
+                            <h3 class="h4">Superior Quality</h3>
+                            <p>From our brick moulding to turnkey projects, we maintain the highest quality standards. Each project undergoes rigorous quality checks to ensure durability and excellence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="commitment-card">
+                            <i class="fas fa-leaf fa-3x mb-3 commitment-icon"></i>
+                            <h3 class="h4">Environmental Care</h3>
+                            <p>We embrace eco-friendly construction practices and sustainable material sourcing, minimizing our environmental impact while building for future generations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="commitment-card">
+                            <i class="fas fa-home fa-3x mb-3 commitment-icon"></i>
+                            <h3 class="h4">Community Focus</h3>
+                            <p>As a proud Maun-based company, we actively contribute to local development, providing employment opportunities and supporting community growth initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <div class="footer-location-top">Botswana, Maun</div>
+            <div>Sedie Shell Filling Station</div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1KiycaYBwr/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>                <div class="footer-right">
+                    <img src="logo.png" alt="Groco-PTY LTD Logo">
+                </div>
+      </div>
+      <div class="footer-copyright">        <p>&copy; 2025 Groco-PTY LTD.All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+ <!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
